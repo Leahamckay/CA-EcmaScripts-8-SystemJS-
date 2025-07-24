@@ -1,3 +1,5 @@
-import { log } from './logger'
+import { runBatch } from "packages/flowModules/simulateBatch.js";
 
-log('Import works!')
+runBatch().then(() => {
+  console.log("🎯 Simulated batch completed.");
+});
