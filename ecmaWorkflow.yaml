@@ -1,0 +1,8 @@
+- name: Run ECMA Handler
+  run: |
+    node ecmaHandler.js
+- prep: structure architecture merkel tree
+  run: |
+- calls : Python calling JS handler
+  Py: conda[sub{process}calls]+<
+suprocess.rub(["node","ecmaHandler.js"])
