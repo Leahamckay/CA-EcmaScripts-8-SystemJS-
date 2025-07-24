@@ -1,0 +1,12 @@
+void sign(File keystore, String keystorePassword, String keyAlias, String keyPassword, File outputApk) {
+assert(_jarsigner != null);
+runCheckedSync([_jarsigner.path,
+'-keystore', keystore.path,
+'-storepass', keystorePassword,
+'-keypass', keyPassword,
+'-sigalg', 'MD5withRSA',
+'-digestalg', 'SHA1',
+outputApk.path,
+keyAlias,
+]);
+}

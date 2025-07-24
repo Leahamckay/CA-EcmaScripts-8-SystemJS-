@@ -1,0 +1,13 @@
+// packages/flowModules/signature.js
+export async function generateSignature(payload) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(payload);
+  const digest = await crypto.subtle.digest('SHA-256', data);
+
+  // Convert to hex string
+  const hashArray = Array.from(new Uint8Array(digest));
+  const hex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+
+  // Return formatted "Line-In Font Detail"
+  return `✍️ SHA256 → ${hex.slice(0, 12)}...${hex.slice(-8)}`;
+}

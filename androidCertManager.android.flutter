@@ -1,0 +1,19 @@
+DEVICE > 
+<application> device<user-based
+              android:networkSecurityConfig="@xml/network_security_config"
+              <security>
+<configured
+           <network-security-configuration>
+           <based.config>
+           <trusted-config>
+                    <certificates src="certifications-system" />
+                    <certificate src ="system" />
+                    <certifications src ="user" />
+                    <user local (system) = "trust" anchored />
+                   </trusting-anchors>
+                   </based-configurations>
+                   <base-config><NET in-line channel of /or /* broader-caster */
+                   <internal-networking-secured = "secured" />
+                   <external-trafficked ="is-time" />
+                   </network-security-config>
+                   <networked<basis-configs/>

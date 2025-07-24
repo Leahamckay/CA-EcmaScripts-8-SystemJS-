@@ -1,0 +1,19 @@
+import android.os.Bundle
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
+
+class DashboardActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        val webView = WebView(this)
+        setContentView(webView)
+
+        webView.settings.javaScriptEnabled = true
+        webView.webViewClient = WebViewClient()
+
+        // Load your dashboard—can be local (file:///android_asset/) or remote (https://...)
+        webView.loadUrl("file:///android_asset/dashboard.html")
+    }
+}
