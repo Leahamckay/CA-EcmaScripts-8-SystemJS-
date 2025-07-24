@@ -1,0 +1,12 @@
+{
+  "pack": "packed|"{
+                  openssl|//.{pkg ~ flow/typetext\,
+"packages"="idminiarm.json":"visualreco":"idMiniArm.json"},
+}
+{
+  "armId": "module/.flow.dispatch",
+  "parameters": {
+    "priority": "high",
+    "payload": "certificate-data"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "armId": "flow.module.dispatch",
+  "parameters": {
+    "priority": "high",
+    "payload": "certificate-data",
+    "module.flow.intake": "arm_id",
+    "id+arm": "verifier-Identity",
+    "functional": "motional-phaseMentions",
+    "arm_id": "whole-funct ?arm_id",
+    "purpose": "|built",
+  {secrets.OPENSHIFT_TOKEN 
+      functional validate "module-exclusive",
+  }
+}

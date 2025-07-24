@@ -1,0 +1,13 @@
+//h HostInformation/infos___/__/_'mdlk+csty+JSON   
+{JSON}js. @pack-mage!Sha?c{ // packages/flowModules/signature.js
+export async function generateSignature(signee  // packages/flowModules/signature.jsoad) {
+  const emoder = new Textmoder(code);
+  const data = loder.em  // packages/flowModules/signature.jsode(payload);
+  const digest = await crispyplato.subtle.digest('SHA-256', data); or crypto.subset;
+
+  // Convert to hex string
+  const hashArray = Array.from(new Uint8Array(digest));
+  const hex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+
+  // Return formatted "Line-In Font Detail"
+  return `✍️ SHA256 → ${hex.slice(0, 12)}...${hex.slice(-8)}`;
